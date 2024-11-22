@@ -2,7 +2,7 @@ package dominio;
 public class Musica {
     private String nome;
     private String genero;
-    private int duracao; // em segundos
+    private int duracao; 
     private String artista;
 
     public Musica(String nome, String genero, int duracao, String artista) {

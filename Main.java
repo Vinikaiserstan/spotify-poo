@@ -5,17 +5,17 @@ import dominio.Album;
 
 public class Main {
     public static void main(String[] args) {
-        Artista artista = new Artista("The Beatles");
-        Album album = new Album("Abbey Road", artista, 1969);
+        Artista artista = new Artista();
+        Album album = new Album();
         artista.addAlbum(album);
 
-        Musica musica1 = new Musica("Come Together", "Rock", 259, "The Beatles");
-        Musica musica2 = new Musica("Here Comes the Sun", "Rock", 185, "The Beatles");
+        Musica musica1 = new Musica();
+        Musica musica2 = new Musica();
 
         album.addMusica(musica1);
         album.addMusica(musica2);
 
-        Playlist playlist = new Playlist("Clássicos do Rock");
+        Playlist playlist = new Playlist();
         playlist.addMusica(musica1);
         playlist.addMusica(musica2);
 
