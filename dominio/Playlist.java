@@ -1,4 +1,5 @@
 package dominio;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,19 +12,16 @@ public class Playlist {
         this.musicas = new ArrayList<>();
     }
 
-    public void addMusica(Musica musica) {
+    public void adicionarMusica(Musica musica) {
         musicas.add(musica);
     }
 
-    public void tocarPlaylist() {
-        System.out.println("Tocando playlist: " + nome);
-        for (Musica musica : musicas) {
-            musica.tocar();
-        }
+    public List<Musica> getMusicas() {
+        return musicas;
     }
 
-    @Override
-    public String toString() {
-        return "Playlist: " + nome + " | Total de Músicas: " + musicas.size();
+    public String getNome() {
+        return nome;
     }
 }
+

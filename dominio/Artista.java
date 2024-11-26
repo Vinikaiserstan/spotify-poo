@@ -1,4 +1,5 @@
 package dominio;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,13 +12,12 @@ public class Artista {
         this.albuns = new ArrayList<>();
     }
 
-    public void addAlbum(Album album) {
+    public void adicionarAlbum(Album album) {
         albuns.add(album);
     }
 
-    @Override
-    public String toString() {
-        return "Artista: " + nome + " | Álbuns: " + albuns.size();
+    public String getNome() {
+        return nome;
     }
 
     public List<Album> getAlbuns() {
